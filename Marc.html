@@ -7,42 +7,102 @@
   <title>Starter Template - Materialize</title>
 
   <!-- CSS  -->
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
+  <link rel="stylesheet" href="marc.css">
 </head>
 
 <body>
+  <div class="container">
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <h3>A Demo of Modal</h3>
 
-      <div class="row center">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="http://3.bp.blogspot.com/-o83LIHahkTI/ThG8K1JYrcI/AAAAAAAAADI/T8a2XZ5n_J0/s1600/Kanye-west-1.1.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Kanye West<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Add Note!</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Kanye West<i class="material-icons right">close</i></span>
-              <p>Office: Chicago</p>
-              <p>Project: Wavy</p>
-              <p>Cohort Level: G2</p>
-              <p>Birthday: June 8</p>
-            </div>
+    <!-- Modal Trigger -->
+
+    <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">Launch Modal</a>
+
+
+
+    <!-- Modal Structure -->
+
+    <div id="demo-modal" class="modal">
+
+      <div class="modal-content">
+
+        <div class="row">
+          <div class="col s12 m6">
+            <img class="responsive-img z-depth-4 materialboxed" src="http://3.bp.blogspot.com/-o83LIHahkTI/ThG8K1JYrcI/AAAAAAAAADI/T8a2XZ5n_J0/s1600/Kanye-west-1.1.jpg">
+          </div>
+          <div class="col s12 m6">
+            <h3>
+              Kanye West
+            </h3>
+            <blockquote>
+              Chicago, Illinois
+              <br />
+              C2
+              <br />
+              University of Texas
+            </blockquote>
           </div>
         </div>
-        
+
+        <div class="row">
+
+          <div class="input-field col s11">
+            <!-- <i class="material-icons prefix">note_add</i> -->
+            <!-- <input placeholder="Notes" id="note" type="text" class="validate"> -->
+            <textarea id="textarea1" placeholder="Notes" class="materialize-textarea"></textarea>
+          </div>
+          <div class="input-field col s1 right">
+            <button class="btn waves-effect waves-light right blue" type="submit" name="action">
+              <i class="material-icons">note_add</i>
+            </button>
+          </div>
+        </div>
+
+        <div id="note" class="row card yellow lighten-4">
+          <div class="col s10 input-field">
+            <input disabled value="Kanye is very talented" id="disabledInput" type="text" class="validate">
+          </div>
+          <div class="col s1">
+            <button style="top:8px" class="left btn-floating btn-small waves-effect waves-light blue" type="submit" id="update"
+              name="action">
+              <i class="material-icons right">save</i>
+            </button>
+          </div>
+          <div class="fixed-action-btn horizontal col sm1" style="position: absolute; display: inline-block; right: 19px; top: 5px">
+            <a class="btn-floating btn-medium teal lighten-1">
+              <i class="material-icons">more_horiz</i>
+            </a>
+            <ul>
+              <li><a style="bottom: 2px" id="delete" class="btn-floating btn-small red" ><i class="material-icons">delete_forever</i></a>
+              </li>
+              <li><a style="bottom: 2px" id="edit" class="btn-floating btn-small yellow darken-1"><i class="material-icons">mode_edit</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="modal-footer">
+
+          <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+
+        </div>
 
       </div>
-      <br><br>
 
     </div>
+
+
+
   </div>
 
 
@@ -50,8 +110,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
-
+  <!-- <script src="js/init.js"></script> -->
+  <script src="Marc.js"></script>
 </body>
 
 </html>
