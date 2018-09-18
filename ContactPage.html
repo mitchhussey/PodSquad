@@ -57,13 +57,16 @@
 
       <div class="search-wrapper">
         <input id="search" placeholder="Search">
+        <input type="text" id="myInput" onkeyup="searchName()" placeholder="Search for names..">
+
       </div>
 
       <div class="row left">
         <div class="col l4 m6 hide-on-small-and-down">
           <div class="card hoverable sticky-action">
             <div class="card-image waves-effect waves-block waves-light">
-              <a href="#" class="waves-effect waves-light btn-floating favBtn"><i class="material-icons">star_border</i></a>
+              <button onclick="favorite()" class="waves-effect waves-light btn-floating favBtn" id = "notFavorite" ><i class="material-icons">star_border</i></button>
+              <button onclick="favorite()" class="waves-effect waves-light btn-floating favBtn" id = "favorite" ><i class="material-icons">star</i></button>
               <img class="activator" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/23275741_10155914503929777_7875720261949730197_o.jpg?_nc_cat=0&oh=44aca1ca4085351b3b0d5580697b8330&oe=5C1D1637">
             </div>
             <div class="card-content center">
