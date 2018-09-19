@@ -4,4 +4,26 @@ blockquote{
     border-left: 5px solid #80cbc4; /* Just change the color value and that's it*/
   }
 
- 
+ #update{
+  top:8px ; 
+  right:3px;
+ }
+
+ #cancelEdit{
+  top:8px
+ }
+
+ #menu{
+  position: absolute; 
+  display: inline-block; 
+  right:19px; 
+  top: 5px
+ }
+
+ #delete{
+  bottom: 2px
+ }
+
+ #edit{
+  bottom: 2px
+ }
