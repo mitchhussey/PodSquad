@@ -10,15 +10,16 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="mitch.css">
 </head>
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+
+  <!-- <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">PodSquad</a>
       <ul class="right hide-on-med-and-down">
-          <img src="https://tinyurl.com/ybkackx2" alt="" height="42px" class="circle">
-     
+         <img src="https://tinyurl.com/ybkackx2" alt="" height="42px" class="circle"> 
+
         <li><a href="#">Mitch Hussey</a></li>
       </ul>
 
@@ -27,12 +28,33 @@
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
+  </nav> -->
+  <!-- <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">PodSquad</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a>A link</a></li>
+          <li><a>A second link</a></li>
+          <li><a>A third link</a></li>
+        </ul> 
+      </div>
+      <div class="nav-content">
+          <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+        <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+          <i class="material-icons">add</i>
+        </a>
+      </div>
+    </nav> -->
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <h1 class="header center gray-text">Contacts</h1>
 
-<<<<<<< HEAD
+    <div class="container">
+
       <div class="search-wrapper">
         <input id="search" placeholder="Search">
         <input type="text" id="myInput" onkeyup="searchName()" placeholder="Search for names..">
@@ -40,147 +62,84 @@
       </div>
 
       <div class="row left contactCard">
-=======
-      <div class="row center">
->>>>>>> ca6b6e8f0edce1e28a26999ff39e2240f4340c7f
         <div class="col l4 m6 hide-on-small-and-down">
-          <div class="card">
+          <div class="card hoverable sticky-action">
             <div class="card-image waves-effect waves-block waves-light">
+              <button onclick="favorite()" class="waves-effect waves-light btn-floating favBtn" id = "notFavorite" ><i class="material-icons">star_border</i></button>
+              <button onclick="favorite()" class="waves-effect waves-light btn-floating favBtn" id = "favorite" ><i class="material-icons">star</i></button>
               <img class="activator" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/23275741_10155914503929777_7875720261949730197_o.jpg?_nc_cat=0&oh=44aca1ca4085351b3b0d5580697b8330&oe=5C1D1637">
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Mitch Hussey<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Details</a></p>
+            <div class="card-content center">
+              <span class="card-title truncate activator grey-text text-darken-4">Mitch Hussey</span>
+              <!-- <a href="#" class="waves-effect waves-light btn "><i class="material-icons">note_add</i></a>
+              <a href="#" class="waves-effect waves-light btn"><i class="material-icons">info</i></a> -->
+
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Mitch Hussey<i class="material-icons right">close</i></span>
-              <p>Pariveda Solutions</p>
+
               <p>New York, New York</p>
               <hr>
-              <h4>Notes</h4>
-              <p>Mitch likes technology</p>
-              <p>He is from Roosevelt Utah</p>
-              <a href="#" class="waves-effect waves-light btn">Add Note</a>
-            </div>
-          </div>
-        </div>
-        <div class="col l3 m6 hide-on-small-and-down">
-          <h3 class="header">Mitch Hussey</h3>
-          <div class="card horizontal">
-            <div class="card-image">
-              <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/23275741_10155914503929777_7875720261949730197_o.jpg?_nc_cat=0&oh=44aca1ca4085351b3b0d5580697b8330&oe=5C1D1637">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-
-                <p>Pariveda Solutions</p>
-                <p>New York, New York</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
+              <a href="#" class="waves-effect waves-light btn light blue darken 3">Add Note</a>
+              <div class="card yellow lighten-4">
+                <p>Has a golf tournament he is playing in soon.</p>
+                <p>Loves playing xbox</p>
+                <p>From Roosevelt Utah</p>
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
-      <br><br>
-
     </div>
   </div>
 
   <ul class="collection hide-on-med-and-up">
     <li class="collection-item avatar">
-      <img src="https://tinyurl.com/ybkackx2" alt="" class="circle">
-      <span class="title">Mitch Hussey</span>
-      <p>Pariveda Solutions <br>
-        New York, NY
+      <img src="https://tinyurl.com/ybkackx2" alt="Mitch Picture" class="circle">
+      <span class="title">Mitch Hussey
+      </span>
+      <p>New York, NY
       </p>
       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     </li>
+
+
     <li class="collection-item avatar">
-      <i class="material-icons circle">folder</i>
-      <span class="title">Title</span>
-      <p>First Line <br>
-        Second Line
-      </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <i class="material-icons circle green">insert_chart</i>
-      <span class="title">Title</span>
-      <p>First Line <br>
-        Second Line
-      </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <i class="material-icons circle red">play_arrow</i>
-      <span class="title">Title</span>
-      <p>First Line <br>
-        Second Line
+      <img src="https://tinyurl.com/ybkackx2" alt="Mitch Picture" class="circle">
+      <span class="title">Mitch Hussey
+      </span>
+      <p>New York, NY
       </p>
       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     </li>
   </ul>
-  <!-- <div class="container">
-    <div class="section">
-
-     
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate
-              our custom components. Additionally, we refined animations and transitions to provide a smoother
-              experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a
-              framework that incorporates components and animations that provide more feedback to users. Additionally,
-              a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new
-              users get started. We are also always open to feedback and can answer any questions a user may have about
-              Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-  </div> -->
-
-  <footer class="page-footer blue">
+  <!-- Action button (New contact) -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+  <!-- <footer class="page-footer blue">
     <div class="footer-copyright">
       <div class="container">
         Made by <a class="darkblue-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
-  </footer>
-
+  </footer> -->
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
-
+  <!-- My javascript code -->
+  <script src="init.js"></script>
 </body>
 
 </html>
