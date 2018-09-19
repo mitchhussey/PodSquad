@@ -52,36 +52,43 @@
 
         <div class="row">
 
-          <div class="input-field col s11">
+          <div class="input-field col s9 m10 l11">
             <!-- <i class="material-icons prefix">note_add</i> -->
             <!-- <input placeholder="Notes" id="note" type="text" class="validate"> -->
             <textarea id="textarea1" placeholder="Notes" class="materialize-textarea"></textarea>
           </div>
-          <div class="input-field col s1 right">
+          <div class="input-field col s3 m2 l1 right">
             <button class="btn waves-effect waves-light right blue" type="submit" name="action">
               <i class="material-icons">note_add</i>
             </button>
           </div>
         </div>
 
-        <div id="note" class="row card yellow lighten-4">
-          <div class="col s10 input-field">
-            <input disabled value="Kanye is very talented" id="disabledInput" type="text" class="validate">
+        <div id="note" class="row card yellow lighten-4 input-field">
+          <div class="col s8  m9 xl10 input-field">
+              <!-- <textarea id="textarea1" class="materialize-textarea"></textarea> -->
+              <!-- <input disabled value="Kanye is very talented " id="disabledInput" type="text" class="validate materialize-textarea"> -->
+              <textarea disabled id="disabledInput" type="text" class="validate materialize-textarea">Kanye is very talented Kanye is very talented Kanye is very talented Kanye is very talented Kanye is very talented Kanye is very talented</textarea>
           </div>
-          <div class="col s1">
-            <button style="top:8px" class="left btn-floating btn-small waves-effect waves-light blue" type="submit" id="update"
+          <div class="col s4 m3  xl2">
+            <button class="left btn-floating btn-small waves-effect waves-light blue" type="submit" id="update"
               name="action">
               <i class="material-icons right">save</i>
             </button>
+            <button class="left btn-floating btn-small waves-effect waves-light red" type="submit" id="cancelEdit"
+              name="action">
+              <i class="material-icons right">cancel</i>
+            </button>
           </div>
-          <div class="fixed-action-btn horizontal col sm1" style="position: absolute; display: inline-block; right: 19px; top: 5px">
+          <div class="fixed-action-btn horizontal col s2 m1" id="menu">
+            
             <a class="btn-floating btn-medium teal lighten-1">
               <i class="material-icons">more_horiz</i>
             </a>
             <ul>
-              <li><a style="bottom: 2px" id="delete" class="btn-floating btn-small red" ><i class="material-icons">delete_forever</i></a>
+              <li><a id="delete" class="btn-floating btn-small red" ><i class="material-icons">delete_forever</i></a>
               </li>
-              <li><a style="bottom: 2px" id="edit" class="btn-floating btn-small yellow darken-1"><i class="material-icons">mode_edit</i></a>
+              <li><a id="edit" class="btn-floating btn-small yellow darken-1"><i class="material-icons">mode_edit</i></a>
               </li>
             </ul>
           </div>
@@ -93,7 +100,7 @@
 
         <div class="modal-footer">
 
-          <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+          <a href="#!" id="closeModal" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
 
         </div>
 
